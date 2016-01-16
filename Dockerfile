@@ -5,4 +5,4 @@ EXPOSE 25565
 WORKDIR /minecraft
 USER 1
 ENTRYPOINT ["java"]
-CMD ["-Xmx4096M", "-Xms1024M", "-XX:+UseG1GC", "-jar", "/minecraft.jar", "nogui"]
+CMD ["-Xmx8192M", "-Xms4096M", "-XX:+UseG1GC", "-jar", "/minecraft.jar", "nogui"]
